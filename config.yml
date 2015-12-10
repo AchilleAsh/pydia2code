@@ -1,0 +1,51 @@
+# Author(s) (displayed at the top of each generated header)
+author: "Timothe Perez"
+# Project Infos
+project:
+  name: "ENSEA"
+  version: "2015"
+
+# Stylesheets to use
+stylesheets:
+  dia2xml: "dia-uml.xsl"
+  xml2cpp: "dia-uml2cpp.xsl"
+
+# Script working directories
+directories:
+  input: "../../dia/"
+  temp: "tmp/"
+  output: "../../src/"
+
+# Diagram filename prefix in the input folder
+# file = dia_prefix+namespace+.dia
+# ! Dia files should not be compressed (see dia options)
+dia_prefix: "diagram_"
+
+# Namespaces to generate
+namespaces:
+#    - acme
+
+#####################
+# For this first version, includes are set in the config file
+# Later this will be handled in the UML object comment field
+
+# Global include in each header in the concerned namespace
+includes:
+#   namespace_name: "globalfile"
+# example
+#  acme: "../global.hpp"
+
+
+# Specific includes for classes in namespaces
+# Typically import from others namespaces
+decorators:
+#  namespace_name:
+#    class_name:
+#      include:
+#        - "file1"
+#        - "file2"
+# example
+#  acme:
+#    foo:
+#      include:
+#        - "../bar/Bar.hpp"
